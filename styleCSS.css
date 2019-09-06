@@ -1,0 +1,82 @@
+/*----------------------Color used to render chart---------------------------*/
+
+
+/*----------------------Colors used to render bars---------------------------*/
+.startPositive {
+  stop-color: #4ac728;
+}
+.endPositive {
+  stop-color: #09822f;
+}
+
+.startNegative {
+  stop-color: #bf0000;
+}
+.endNegative {
+  stop-color: #f53514;
+}
+
+.startTotal {
+  stop-color: #6eb6ff;
+}
+.endTotal {
+  stop-color: #271cff;
+}
+
+.startLast {
+  stop-color: #ace7ff;
+}
+.endLast {
+  stop-color: #6eb5ff;
+}
+
+
+/*----------------------Used to render shade effect--------------------------*/
+.bar.total rect {
+  fill: url(#svgGradientTotal);
+}
+.bar.last rect {
+  fill: url(#svgGradientLast);
+}
+.bar.positive rect {
+  fill: url(#svgGradientPositive);
+}
+.bar.negative rect {
+  fill: url(#svgGradientNegative);
+}
+
+/*----------------------Other bar characteristics----------------------------*/              
+.bar line.connector {
+  stroke: black;
+  stroke-dasharray: 3;
+}
+
+
+
+/*----------------------Axis settings----------------------------------------*/
+.axis text {
+  fill: black;
+  font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.axisHollow path,
+.axisHollow line {
+  fill: none;
+  stroke: none;
+}
+
+/*----------------------Box settings-----------------------------------------*/
+.box text {
+	pointer-events: none;
+	fill: white;
+    font: 12px sans-serif;		/*WARNING: if you change font size, please adjust the box.txt height (see /!\ in Js.js file)*/
+	font-weight: 100;
+}
+
+	
